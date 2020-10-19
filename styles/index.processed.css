@@ -4,5 +4,37 @@
  */
 
 body {
-  background: #f5f5f5;
+  background: url(https://media.giphy.com/media/14zSZXA5q24PC/source.gif);
+  color: rgb(250, 253, 247);
+  font-family: 'Press Start 2P', cursive;
+
+  /** permet de centrer les éléments dans la page **/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/** l'image fait toujours la même hauteur **/
+img{
+  margin: 40px;
+  border: 1px solid yellow;
+  padding: 10px;
+  height: 40vh;
+  width: auto;
+}
+/** les titres ne sont pas trop grands **/
+h1,h2{
+  max-width: 800px;
+  line-height: 1.5;
+}
+
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 20px;
 }
