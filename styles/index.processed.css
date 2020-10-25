@@ -38,3 +38,70 @@ h1{
 h2{
   font-size: 20px;
 }
+
+.btn {
+	box-shadow: 6px 6px 0px 0px #6d4e0b;
+	background:#333;
+	border:1px solid #EEDD0b;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:'Press Start 2P', cursive;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.btn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+/** liste de boutons **/
+.btns-list{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  justify-content: center;
+}
+.btn{
+  margin: 15px;
+}
+
+/** faire bouger un peu tout ça **/
+h1,
+h2 {
+  animation-name: fade-in;
+  animation-duration: 1s;
+}
+
+/** faire clignotter le sous titre **/ 
+h2 {
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/** une animation de très bon goût **/
+.yeah{
+  animation: yeah 2s ease-out;
+}
+@keyframes yeah{
+  0%{
+    transform:rotate(-600deg) scale(0) rotateY(180deg)
+  }
+  100%{
+    transform: rotate(0deg) scale(1);
+  }
+}
