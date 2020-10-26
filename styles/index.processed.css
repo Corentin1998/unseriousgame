@@ -31,7 +31,6 @@ h1,h2{
   line-height: 1.5;
 }
 
-
 h1{
   font-size: 30px;
 }
@@ -41,11 +40,11 @@ h2{
 
 .btn {
 	box-shadow: 6px 6px 0px 0px #6d4e0b;
-	background:#333;
-	border:1px solid #EEDD0b;
+	background:#139DB7;
+	border:1px solid #FFFFFF;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color: #000000;
 	font-family:'Press Start 2P', cursive;
 	font-size:17px;
 	padding:7px 25px;
