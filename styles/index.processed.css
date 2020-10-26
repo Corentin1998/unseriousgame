@@ -71,6 +71,27 @@ h2{
 .btn{
   margin: 15px;
 }
+.signature{
+  background-color: #000000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: absolute;
+  top:0px;
+  border: 5px 5px 15px 5px #FFFFFF;
+  right: 20px;
+  width: 150px;
+  border-radius: 12px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.signature a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 15px;
+}
 
 /** faire bouger un peu tout ça **/
 h1,
@@ -86,12 +107,13 @@ h2 {
 
 @keyframes fade-in {
   0% {
-    opacity: 0;
+    Opacity : 0 ;
   }
-  100% {
-    opacity: 1;
+  To {
+    Opacity : 1 ;
   }
-}
+  }
+
 
 /** une animation de très bon goût **/
 .yeah{
