@@ -5,7 +5,7 @@ function startChrono(){
     setInterval( //crée une boucle
         function(){
             time++; // 1,2,3,4 etc...
-            document.title="ça fait "+time+" secondes que tu réfléchis"; //affiche le temps passé dans le titre de page
+            document.title="Déjà "+time+" secondes que tu réfléchis"; //affiche le temps passé dans le titre de page
             // une fois que tu as réussi essaye de résoudre ces todos dans l'ordre...
             // todo 1 afficher le décompte dans la page HTML
             // todo 2 Quand ça fait 5 secondes on affiche "dépeche toi" 
