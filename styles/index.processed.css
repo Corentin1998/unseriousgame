@@ -46,8 +46,9 @@ h2{
 
 .btn {
 	box-shadow: 3px 3px 0px 0px #287583;
-	background:rgb(131, 70, 201);
-	border:1px solid #EEDD0b;
+  background:rgb(131, 70, 201);
+  border-radius:10px;
+  border:1px solid #EEDD0b;
 	display:inline-block;
 	cursor:pointer;
 	color: rgb(0, 0, 0);
