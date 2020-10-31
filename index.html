@@ -1,27 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- La balise "Meta va donner diverses informations sur la page générales sur la page
+  comme le nom de la page dans longlet ou son icône -->
   <!--  Meta  -->
-    <meta charset="UTF-8" />
-    <title>Quiz !</title>
-    <link rel="icon" href="https://images-na.ssl-images-amazon.com/images/I/51cUdfKOrvL._AC_SY355_.jpg">
+   <meta charset="UTF-8" />
+   <title>Quiz !</title>
+   <link rel="icon" href="https://images-na.ssl-images-amazon.com/images/I/51cUdfKOrvL._AC_SY355_.jpg">
   
+<!-- La balise "Styles" va donner les informations précises sur quoi afficher sur la page,
+c'est-à-dire dans notre cas : la question, les réponses ou à quoi va se référer la page pour charger
+les styles (stylesheet) comme les couleurs, la typogralphie, la taille, etc. -->
   <!--  Styles  -->
-    <link rel="stylesheet" href="styles/index.processed.css">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <link rel="stylesheet" href="styles/index.processed.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/phone.css" />
 </head>
 <body>
     <img src="https://media.giphy.com/media/GI1kfuiI4Tzgc/giphy.gif">
 
     <h1>De quelle couleur est le cheval blanc d'Henri IV ?</h1>
 
-    <a class="btn" style="background:rgb(255, 255,255);" href="win.html" > Blanc </a><br>
-    <a class="btn" style="background:rgb(106, 64, 173);" href="perdu.html" > Violet </a><br>
-    <a class="btn" style="background:rgb(36, 196, 63);" href="perdu.html" > Vert </a><br>
+    <a class="btn" style="background:hsl(0, 0%, 100%);" href="win.html" > Blanc </a>
+    <a class="btn" style="background:hsl(263, 46%, 46%);" href="perdu.html" > Violet </a>
+    <a class="btn" style="background:hsl(130, 69%, 45%);" href="perdu.html" > Vert </a>
 
     <div class="signature">
-      <a href="https://github.com/Corentin1998" >Corentin HABIB></a>
+     <a href="https://github.com/Corentin1998" >Corentin HABIB></a>
     </div>
+
   <!-- Scripts -->
-    <script src="scripts/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script>
+    startChrono()
+  </script>
 </body>
 </html>

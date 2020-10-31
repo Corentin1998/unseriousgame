@@ -3,10 +3,12 @@
  * - Add any styles you want here!
  */
 
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+
 body {
   background: url(https://media.giphy.com/media/14zSZXA5q24PC/source.gif);
-  color: rgb(250, 253, 247);
-  font-family: 'Press Start 2P', cursive;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', cursive;
 
   /** permet de centrer les éléments dans la page **/
   display: flex;
@@ -20,11 +22,12 @@ body {
 /** l'image fait toujours la même hauteur **/
 img{
   margin: 40px;
-  border: 1px solid yellow;
+  border: 1px solid #287583;
   padding: 10px;
   height: 40vh;
   width: auto;
 }
+
 /** les titres ne sont pas trop grands **/
 h1,h2{
   max-width: 800px;
@@ -38,26 +41,33 @@ h2{
   font-size: 20px;
 }
 
+/**On définit les caractéristiques des boutons (sauf qui sont modififés directement dans leur
+ "html" dédié (ex : couleur des boutons)**/
+
 .btn {
-	box-shadow: 6px 6px 0px 0px #6d4e0b;
-	background:#139DB7;
-	border:1px solid #FFFFFF;
+	box-shadow: 3px 3px 0px 0px #287583;
+	background:rgb(131, 70, 201);
+	border:1px solid #EEDD0b;
 	display:inline-block;
 	cursor:pointer;
-	color: #000000;
+	color: rgb(0, 0, 0);
 	font-family:'Press Start 2P', cursive;
 	font-size:17px;
 	padding:7px 25px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #810e05;
+	text-shadow:0px 1px 0px #000000;
 }
+
+/**On définit comment va réagir le bouton lorsque la souris va passer dessus**/
 .btn:hover {
-	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
-	background-color:#f24437;
+	background:linear-gradient(to bottom, #00bd09 5%, #108800 100%);
+	background-color:#198b19;
 }
+
+/**On définit le mouvement du bouton lorsque l'on clique dessus**/
 .btn:active {
-	position:relative;
-	top:1px;
+  position:relative;
+	top:5px;
 }
 
 /** liste de boutons **/
@@ -116,7 +126,7 @@ h2 {
 
 /** une animation de très bon goût **/
 .yeah{
-  animation: yeah 2s ease-out;
+  animation: yeah 1s cubic-bezier(0.05, 1, 1, 1);
 }
 @keyframes yeah{
   0%{
